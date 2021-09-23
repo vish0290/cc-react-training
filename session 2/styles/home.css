@@ -1,88 +1,82 @@
-* {
-  box-sizing: border-box;
-}
-
-
-
 body {
-  font-family:'Blinker';
   margin: 0;
+  font-family: "Lato", sans-serif;
+  background-color: black;
 }
 
-/* Header/logo Title */
-.header {
-  padding: 80px;
-  text-align: left;
-  background: #6446aa;
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  margin-top: 50px;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  font-size: 15px;
+}
+
+.sidebar a {
+  display: block;
+  color: rgb(100, 100, 100);
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a:hover{
   color: white;
 }
+ 
 
-/* Increase the font size of the heading */
-.header h1 {
-  font-size: 40px;
+div.content {
+  margin-left: 280px;
+  padding: 1px 16px;
+  height: 1000px;
+  
 }
 
-/* Style the top navigation bar */
 .navbar {
+
   overflow: hidden;
-  background-color: #333;
+  margin-top: 10px;
 }
 
-/* Style the navigation bar links */
 .navbar a {
   float: left;
   display: block;
-  color: white;
+  color: rgb(100, 100, 100);
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
 }
 
-/* Right-aligned link */
 .navbar a.right {
-  float: right;
+  margin-left: 10px;
+  float:inline-end;
+  border-color:  rgb(100, 100, 100);
+  border-style: solid;
+  border-width: thin;
+  border-radius: 25px;
 }
 
-/* Change color on hover */
 .navbar a:hover {
-  font-weight:bold;
+color: white;
+border-color: white;
 }
 
-/* Column container */
-.row {  
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
+i{
+  margin-right: 10px;
 }
 
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  -ms-flex: 30%; /* IE10 */
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
+.line{
+  width: 250px;
+  float: left;
+  margin-left: 10px;
 
-/* Main column */
-.main {   
-  -ms-flex: 70%; /* IE10 */
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
 }
-
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
+#p{
+  margin-top: 8px;
 }
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
+#add{
+  border-style: solid;
+  border-width: thin;
 }

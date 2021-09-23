@@ -1,63 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <title></title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Blinker' rel='stylesheet'>
-    <link rel="stylesheet" href="styles/home.css">
+    <title>Spotify Playlist</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles/home.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
 </head>
-
 <body>
+
+<div class="sidebar">
+  <a class="active" href="#home"><i class="fa-solid fa-house"></i>Home</a>
+  <a href="#search"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
+  <a href="#lib"><i class="fa-solid fa-bars" style="transform: rotate(90deg);"></i>Library</a>
+  <a style="color:  rgb(100, 100, 100);;">PLAYLISTS</a>
+  <a href="#newplaylist"><i class="fa-solid fa-plus" id="add"></i>Create Playlist</a>
+  <a href="#newplaylist"><i class="fa-solid fa-heart"></i>Liked Songs</a>
+  <hr class="line">
+  <a href ="#chill" >Chill loaf</a>
+  <a href ="#chill" >On Repeat</a>
+  <a href ="#chill" style="color: white">Upbeat</a>
+  <a href ="#chill" >My Shazam Tracks</a>
+
+
+</div>
+
+<div class="content">
     <div class="navbar">
-        <a href="#" class="active">Home</a>
-        <a href="#">About US</a>
-        <a href="#">Our Works</a>
-        <a href="#" class="right">Login</a>
-        <a href="#" class="right">Sign Up</a>
-        
+        <a href="#"><i class="fa-solid fa-circle-chevron-left " style="font-size: 24px;"></i></a>
+        <a href="#"><i class="fa-solid fa-circle-chevron-right" style="font-size: 24px;"></i></a>
+        <a href="#" class="right" ><i class="fa-solid fa-circle-user" style="font-size: 24px;"></i>Vishwanath </a>
+        <a href="#" class="right" >UPGRADE</a>
     </div>
-
-    <div class="header">
-        <h1>Ola amigos</h1>
-        <p></p>
-    </div>
-
-
-    <div class="row">
-        <div class="side">
-            <h2>About Me</h2>
-            <h5>Photo of me:</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-            <h3>More Text</h3>
-            <p>Lorem ipsum dolor sit ame.</p>
-            <div class="fakeimg" style="height:60px;">Image</div><br>
-            <div class="fakeimg" style="height:60px;">Image</div><br>
-            <div class="fakeimg" style="height:60px;">Image</div>
-        </div>
-        <div class="main">
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Dec 7, 2017</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                ad minim veniam, quis nostrud exercitation ullamco.</p>
-            <br>
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Sep 2, 2017</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                ad minim veniam, quis nostrud exercitation ullamco.</p>
-        </div>
-    </div>
-
-    <div class="footer">
-        <h2>Footer</h2>
-    </div>
+</div>
 
 </body>
-
 </html>
