@@ -29,7 +29,7 @@ body {
 
 div.content {
   margin-left: 280px;
-  padding: 1px 16px;
+ 
   height: 1000px;
   
 }
@@ -43,16 +43,18 @@ div.content {
 .navbar a {
   float: left;
   display: block;
-  color: rgb(100, 100, 100);
+  color: rgba(0, 0, 0, 0.822);
   text-align: center;
   padding: 14px 20px;
+  margin-top: 10px;
+  
   text-decoration: none;
 }
 
 .navbar a.right {
   margin-left: 10px;
   float:inline-end;
-  border-color:  rgb(100, 100, 100);
+  border-color: white;
   border-style: solid;
   border-width: thin;
   border-radius: 25px;
@@ -61,6 +63,7 @@ div.content {
 .navbar a:hover {
 color: white;
 border-color: white;
+background-color: black;
 }
 
 i{
@@ -79,4 +82,25 @@ i{
 #add{
   border-style: solid;
   border-width: thin;
+}
+.header{
+  background-image: linear-gradient(45deg,rgb(228, 88, 111),rgb(153, 35, 147));
+  height: 400px;
+  
+}
+th{
+
+ 
+}
+.img{
+  box-shadow: 10px 10px 5px rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0);
+}
+td{
+  
+  color: white;
+}
+table{
+  margin-left: 50px;
+ 
 }
