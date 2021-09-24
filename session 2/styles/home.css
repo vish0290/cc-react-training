@@ -1,18 +1,19 @@
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
-  background-color: black;
+  background-color: rgb(31, 31, 31);
 }
 
 .sidebar {
   margin: 0;
   padding: 0;
-  width: 300px;
-  margin-top: 50px;
+  width: 250px;  
   position: fixed;
   height: 100%;
   overflow: auto;
+  background-color: black;
   font-size: 15px;
+  margin-top:-10px;
 }
 
 .sidebar a {
@@ -28,8 +29,7 @@ body {
  
 
 div.content {
-  margin-left: 280px;
- 
+  margin-left: 250px;
   height: 1000px;
   
 }
@@ -47,7 +47,6 @@ div.content {
   text-align: center;
   padding: 14px 20px;
   margin-top: 10px;
-  
   text-decoration: none;
 }
 
@@ -68,10 +67,11 @@ background-color: black;
 
 i{
   margin-right: 10px;
+  margin-left: 10px;
 }
 
 .line{
-  width: 250px;
+  width: 200px;
   float: left;
   margin-left: 10px;
 
@@ -85,22 +85,17 @@ i{
 }
 .header{
   background-image: linear-gradient(45deg,rgb(228, 88, 111),rgb(153, 35, 147));
-  height: 400px;
-  
-}
-th{
-
- 
+  height: 400px; 
 }
 .img{
-  box-shadow: 10px 10px 5px rgb(0, 0, 0);
+  box-shadow: 0 0 15px 20px rgba(0, 0, 0, 0.479);
   background-color: rgba(255, 255, 255, 0);
 }
-td{
-  
-  color: white;
-}
-table{
+.playlisticon{
+  display: flex;
   margin-left: 50px;
- 
+  margin-top: 25px;
 }
+
+
+
