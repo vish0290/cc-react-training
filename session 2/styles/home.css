@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Lato", sans-serif;
+  font-family: 'Graphik', sans-serif;
   background-color: rgb(31, 31, 31);
 }
 
@@ -52,14 +52,20 @@ div.content {
 
 .navbar a.right {
   margin-left: 10px;
+  margin-right: 20px;
   float:inline-end;
   border-color: white;
   border-style: solid;
   border-width: thin;
   border-radius: 25px;
 }
+.navbar a.left{
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+}
 
-.navbar a:hover {
+.navbar  a:hover {
 color: white;
 border-color: white;
 background-color: black;
@@ -85,17 +91,94 @@ i{
 }
 .header{
   background-image: linear-gradient(45deg,rgb(228, 88, 111),rgb(153, 35, 147));
-  height: 400px; 
+  height: 450px; 
 }
 .img{
   box-shadow: 0 0 15px 20px rgba(0, 0, 0, 0.479);
   background-color: rgba(255, 255, 255, 0);
+  border-style: none;
 }
 .playlisticon{
   display: flex;
   margin-left: 50px;
   margin-top: 25px;
 }
+.datacontent{
+  margin-left: 50px;
+  color: white;
+}
+
+h1{
+  font-size: 75px;
+}
+.songdiv{
+  
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.controlicon{
+  display: flex;
+
+}
+.play{
+  margin-top: 5px;
+  color:rgb(95, 197, 95);
+  font-size: 48px;
+
+}
+.whiteicon{
+  margin-top: 15px;
+  font-size: 24px;
+  color:grey;
+  margin-left: 15px;
+}
 
 
+.controlicon a:hover{
+  color: white;
+}
+.controlicon2{
+  margin-top: 15px;
+  margin-right: 50px;
+}
+.controlicon2 a{
+  color: grey;
+  text-decoration: none;
+}
 
+.controlicon2 a:hover{
+  color: white;
+}
+table{
+  color: grey;
+  margin-top: 15px;
+}
+td{
+  text-align: left;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  
+}
+th{
+  padding-left: 10px;
+  border-bottom: 1px solid rgb(100, 100, 100);
+  text-align: left;
+}
+.song{
+  display: flex;
+}
+.songimg{
+  margin-top: 5px;
+  width: 45px;
+  height: 45px;
+}
+
+.songdetail{
+  margin-left: 20px;
+  margin-top:-5px
+}
+.cont{
+  margin-top: 15px;
+  background-color: rgba(0, 0, 0, 0.26);
+}

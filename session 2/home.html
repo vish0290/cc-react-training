@@ -1,47 +1,191 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Spotify Playlist</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="styles/home.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/home.css">
+    <link href="http://fonts.cdnfonts.com/css/graphik" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
 </head>
+
 <body>
 
-<div class="sidebar">
-  <a class="active" href="#home"><i class="fa-solid fa-house"></i>Home</a>
-  <a href="#search"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
-  <a href="#lib"><i class="fa-solid fa-bars" style="transform: rotate(90deg);"></i>Library</a>
-  <a style="color:  rgb(100, 100, 100);;">PLAYLISTS</a>
-  <a href="#newplaylist"><i class="fa-solid fa-plus" id="add"></i>Create Playlist</a>
-  <a href="#newplaylist"><i class="fa-solid fa-heart"></i>Liked Songs</a>
-  <hr class="line">
-  <a href ="#chill" >Chill loaf</a>
-  <a href ="#chill" >On Repeat</a>
-  <a href ="#chill" style="color: white">Upbeat</a>
-  <a href ="#chill" >My Shazam Tracks</a>
+    <div class="sidebar">
+        <a class="active" href="#home"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="#search"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
+        <a href="#lib"><i class="fa-solid fa-bars" style="transform: rotate(90deg);"></i>Library</a>
+        <a style="color:  rgb(100, 100, 100);;">PLAYLISTS</a>
+        <a href="#newplaylist"><i class="fa-solid fa-plus" id="add"></i>Create Playlist</a>
+        <a href="#newplaylist"><i class="fa-solid fa-heart"></i>Liked Songs</a>
+        <hr class="line">
+        <a href="#chill">Chill loaf</a>
+        <a href="#chill">On Repeat</a>
+        <a href="#chill" style="color: white">Upbeat</a>
+        <a href="#chill">My Shazam Tracks</a>
 
 
-</div>
-
-<div class="content">
-    <div class="header">
-    <div class="navbar">
-        <a href="#"><i class="fa-solid fa-circle-chevron-left " style="font-size: 24px;"></i></a>
-        <a href="#"><i class="fa-solid fa-circle-chevron-right" style="font-size: 24px;"></i></a>
-        <a href="#" class="right" ><i class="fa-solid fa-circle-user" style="font-size: 24px;"></i>Vishwanath </a>
-        <a href="#" class="right" >UPGRADE</a>
     </div>
-        <div class="playlisticon">
-            <div class="image">
-                <img class="img" src="assests/thumbnail.png" alt="Upbeats">
+
+    <div class="content">
+        <div class="header">
+            <div class="navbar">
+                <a href="#" class="left"><i class="fa-solid fa-circle-chevron-left "></i></a>
+                <a href="#" class="left"><i class="fa-solid fa-circle-chevron-right"></i></a>
+                <a href="#" class="right"><i class="fa-solid fa-circle-user" style="font-size: 24px;"></i>Vishwanath </a>
+                <a href="#" class="right">UPGRADE</a>
             </div>
-            <div class="datacontent">
-                
+            <div class="playlisticon">
+                <div class="image">
+                    <img class="img" src="assests/thumbnail.png" alt="Upbeats">
+                </div>
+                <div class="datacontent">
+                    <p>PLAYLIST</p>
+                    <h1>Upbeat</h1>
+                    <p><b>Vishwanath.</b> 59 songs,3hr 15min</p>
+                </div>
+            </div>
+            <div class="cont">
+            <div class="songdiv">
+                <div class="controlicon">
+                    <a class="play"><i class="fas fa-play-circle"></i></a>
+                    <a class="whiteicon"><i class="far fa-arrow-alt-circle-down"></i></a>
+                    <a class="whiteicon"><i class="fas fa-ellipsis-h"></i></a>
+                </div>
+                <div class="controlicon2">
+                    <a><i class="fa-solid fa-magnifying-glass" style="font-size: 24px;"></i></a>
+                    <a id="order" href="#">Custom orders<i class="fas fa-sort-down"></i></a>
+                </div>
+            </div>
+            <div class="songlist">
+                <table style="width: 100%;">
+                    <tr>
+                        <th>#</th>
+                        <th>TITLE</th>
+                        <th>ALBUM</th>
+                        <th>DATE ADDED</th>
+                        <th><i class="far fa-clock"></i></th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><div class="song">
+                            <div class="songimg">
+                                <img src="assests/on.png" alt="ON">
+                            </div>
+                            <div class="songdetail">
+                                <a><p><b>ON</b><br>BTS</p></a>
+                            </div>
+                        </div></td>
+                        <td>MAP OF THE SOUL: 7</td>
+                        <td>Feb 1,2021</td>
+                        <td>4:06</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><div class="song">
+                            <div class="songimg">
+                                <img src="assests/be.png" alt="be">
+                            </div>
+                            <div class="songdetail">
+                                <a><p><b>DYNAMITE</b><br>BTS</p></a>
+                            </div>
+                        </div></td>
+                        <td>BE</td>
+                        <td>Feb 1,2021</td>
+                        <td>3:19</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><div class="song">
+                            <div class="songimg">
+                                <img src="assests/love yourself.png" alt="love yourself">
+                            </div>
+                            <div class="songdetail">
+                                <a><p><b>DNA</b><br>BTS</p></a>
+                            </div>
+                        </div></td>
+                        <td>Love Yourself</td>
+                        <td>Feb 1,2021</td>
+                        <td>3:43</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><div class="song">
+                            <div class="songimg">
+                                <img src="assests/square one.png" >
+                            </div>
+                            <div class="songdetail">
+                                <a><p><b>BOOMBAYAH</b><br>BLACKPINK</p></a>
+                            </div>
+                        </div></td>
+                        <td>SQUARE ONE</td>
+                        <td>Feb 1,2021</td>
+                        <td>4:01</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><div class="song">
+                            <div class="songimg">
+                                <img src="assests/the album.png">
+                            </div>
+                            <div class="songdetail">
+                                <a><p><b>How You Like That</b><br>BLACKPINK</p></a>
+                            </div>
+                        </div></td>
+                        <td>THE ALBUM</td>
+                        <td>Feb 1,2021</td>
+                        <td>3:01</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><div class="song">
+                            <div class="songimg">
+                                <img src="assests/the album(1).png">
+                            </div>
+                            <div class="songdetail">
+                                <a><p><b>LALISA</b><br>LISA</p></a>
+                            </div>
+                        </div></td>
+                        <td>LALISA</td>
+                        <td>Sep 10,2021</td>
+                        <td>3:21</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><div class="song">
+                            <div class="songimg">
+                                <img src="assests/it's definitely you.png">
+                            </div>
+                            <div class="songdetail">
+                                <a><p><b>It's Definitely You</b><br>V,Jin</p></a>
+                            </div>
+                        </div></td>
+                        <td>HWRANG</td>
+                        <td>Sep 10,2021</td>
+                        <td>3:51</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td><div class="song">
+                            <div class="songimg">
+                                <img src="assests/inferno.png">
+                            </div>
+                            <div class="songdetail">
+                                <a><p><b>INFERNO</b><br>Sub Urban, Bella Porach</p></a>
+                            </div>
+                        </div></td>
+                        <td>INFERNO</td>
+                        <td>Sep 10,2021</td>
+                        <td>2:13</td>
+                    </tr>
+                    
+                </table>
             </div>
         </div>
+        </div>
+
     </div>
-</div>
 
 </body>
+
 </html>
