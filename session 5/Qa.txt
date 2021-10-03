@@ -1,0 +1,74 @@
+0: Is JavaScript single threaded or multithreaded? What does it mean to be any?
+Ans:
+
+
+
+
+1: What are promises? Why are they used?
+
+2: What do async/await do? Explain it in your own words.
+
+3: How do we catch errors in async functions?
+
+4: What do async functions return?
+
+5: What do then() consumers in promises return?
+
+6: Write the explicit equivalent of Promise.resolve(100);
+
+7: What are the states a promise can be in?
+
+8: What happens if neither resolve nor reject is called within a promise?
+Ans:
+
+9: What happens if multiple resolve or reject is called within a promise?
+Ans: It will only accept one resolve or reject moreover it will accept the first one only. (first come first serve).
+
+10: What does the finally() method on promise do? Provide your explanation.
+Ans: finally() is executed when the promise is done with its part which means when thw promise is settled then the finally() is executed, this can be used to do some clean up stuff
+or process when the promise is settled.
+
+11: What are microtasks in JS?
+Ans:microtask is the short function which are executed after the function
+
+12: Write a simple print() function that accepts a callback, which gets called after 3 seconds. The callback function could be anything that prints out on the screen.
+Ans:function call(x,y,z){
+        console.log(x)
+        z(y);
+    }
+    function dis(value){
+        setTimeout(()=>{console.log(value);},3000)
+    }
+    call('hello','there',dis)
+
+13: Delay with a promise
+
+We know that setTimeout() uses a callback.
+Create a promise based alternative.
+
+The function named delay(ms) should return a promise.
+
+We should be able to achieve something like this:
+
+delay(3000).then(() => alert('Should alert after 3 seconds'))
+
+Ans: 
+
+14: Consume the following promise using `await`.
+
+let promise = new Promise((res,rej) => {
+setTimeout(() => res("Resolved!"),3000)
+} );
+
+promise.then((res) => alert("Response value is: " + res)); // this line needs to get replaced.
+
+
+15: What is the difference between the following two lines of code:
+
+promise.then(f1).catch(f2);
+
+and
+
+promise.then(f1, f2);
+
+Provide an explanation for your answer.
