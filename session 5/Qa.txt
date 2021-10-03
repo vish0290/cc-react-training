@@ -52,7 +52,14 @@ We should be able to achieve something like this:
 
 delay(3000).then(() => alert('Should alert after 3 seconds'))
 
-Ans: 
+Ans: function delay(ms) {
+    let mess = "How are you"
+    setTimeout(()=>{display(mess);},ms)
+}
+function display(mess){
+ console.log(mess)
+}
+delay(3000)
 
 14: Consume the following promise using `await`.
 
@@ -61,14 +68,12 @@ setTimeout(() => res("Resolved!"),3000)
 } );
 
 promise.then((res) => alert("Response value is: " + res)); // this line needs to get replaced.
-
+Ans: let value = await promise;
+    console.log(value) 
 
 15: What is the difference between the following two lines of code:
-
 promise.then(f1).catch(f2);
-
 and
-
 promise.then(f1, f2);
-
 Provide an explanation for your answer.
+Ans: Let's consider f1 as succcess and f2 as fail. In the type 1 that is promise.then(f1).catch(f2) is better when comapred to promise.then(f1,f2) because lets have a small sceneario in which we are expecting invalid succcess callback we want the exception to be handled,In the promise.then(f1,f2) the f1 callback is returened and the error is not envoked whereas in the promise.then().catch() the error callback is envoked it will be caught by the .catch(error).  
