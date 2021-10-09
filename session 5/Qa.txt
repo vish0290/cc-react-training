@@ -34,8 +34,7 @@ Ans: it will stay in the pending state.
 Ans: It will only accept one resolve or reject moreover it will accept the first one only. (first come first serve).
 
 10: What does the finally() method on promise do? Provide your explanation.
-Ans: finally() is executed when the promise is done with its part which means when thw promise is settled then the finally() is executed, this can be used to do some clean up stuff
-or process when the promise is settled.
+Ans: finally() is executed when the promise is done with its part which means when thw promise is settled then the finally() is executed, this can be used to do some clean up stuff or process when the promise is settled.
 
 11: What are microtasks in JS?
 Ans:microtask is the short function which are executed after the function
