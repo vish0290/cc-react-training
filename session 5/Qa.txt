@@ -77,7 +77,7 @@ setTimeout(() => res("Resolved!"),3000)
 } );
 
 promise.then((res) => alert("Response value is: " + res)); // this line needs to get replaced.
-Ans: let value = await promise;
+Ans:let value = await promise;
     console.log(value) 
 
 15: What is the difference between the following two lines of code:
